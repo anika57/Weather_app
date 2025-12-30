@@ -1,59 +1,103 @@
-# WeatherApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+---
 
-## Development server
+# Frontend Mentor - Weather app solution
 
-To start a local development server, run:
+This is a solution to the [Weather app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/weather-app-K1FhddVm49). This project focuses on building a responsive, data-driven weather application with a clean UI and smooth user interactions.
 
-```bash
-ng serve
-```
+## Table of contents
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* [Overview](#overview)
 
-## Code scaffolding
+  * [The challenge](#the-challenge)
+  * [Screenshot](#screenshot)
+  * [Links](#links)
+* [My process](#my-process)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+  * [Built with](#built-with)
+  * [What I learned](#what-i-learned)
+  * [Continued development](#continued-development)
+  * [Useful resources](#useful-resources)
+* [Author](#author)
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Overview
 
-```bash
-ng generate --help
-```
+### The challenge
 
-## Building
+Users should be able to:
 
-To build the project run:
+* Search for weather information by entering a location
+* View current weather details such as temperature, condition icon, and location
+* See additional metrics including feels-like temperature, humidity, wind speed, and precipitation
+* Browse a 7-day daily forecast with high/low temperatures
+* View an hourly forecast for selected days
+* Switch between days in the hourly forecast
+* Toggle between Metric and Imperial units (temperature, wind speed, precipitation)
+* Experience an optimal layout across mobile and desktop devices
+* See hover and focus states for interactive elements
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Screenshot
 
-## Running unit tests
+![](./screenshot.jpg)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+### Links
 
-## Running end-to-end tests
+* **Solution URL:** [https://www.frontendmentor.io/solutions/weather-app-angular-open-meteo](https://www.frontendmentor.io/solutions/weather-app-angular-open-meteo)
+* **Live Site URL:** [https://your-live-site-url.com](https://your-live-site-url.com)
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## My process
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Built with
 
-## Additional Resources
+* Angular (Standalone Components)
+* TypeScript
+* Semantic HTML5
+* SCSS
+* Flexbox & CSS Grid
+* Mobile-first workflow
+* Open-Meteo API
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+### What I learned
+
+* Managing shared state such as unit preferences across multiple components
+* Handling API responses and transforming data for UI-friendly formats
+* Implementing responsive layouts for complex dashboards
+* Improving UX with keyboard events, dropdown interactions, and outside-click handling
+* Structuring an Angular app using reusable, standalone components
+
+---
+
+### Continued development
+
+* Add loading and error states for API requests
+* Improve accessibility (ARIA roles and keyboard navigation)
+* Add geolocation-based weather detection
+* Enhance performance with caching and memoization
+
+---
+
+### Useful resources
+
+* [Open-Meteo API Docs](https://open-meteo.com/en/docs) – For weather and forecast data
+* [Angular Documentation](https://angular.dev/) – Component and event handling
+* [Frontend Mentor Community](https://www.frontendmentor.io/community) – Feedback and inspiration
+
+---
+
+## Author
+
+* Frontend Mentor – [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+* GitHub – [https://github.com/yourusername](https://github.com/yourusername)
+
+---
+
