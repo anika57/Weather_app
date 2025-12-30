@@ -49,7 +49,7 @@ Users should be able to:
 
 ### Links
 
-* **Solution URL:** [https://www.frontendmentor.io/solutions/weather-app-angular-open-meteo](https://www.frontendmentor.io/solutions/weather-app-angular-open-meteo)
+* **Solution URL:** [https://www.frontendmentor.io/solutions/responsive-weather-app-uU1yeVKari](https://www.frontendmentor.io/solutions/responsive-weather-app-uU1yeVKari)
 * **Live Site URL:** [https://anika57.github.io/Weather_app/](https://anika57.github.io/Weather_app/)
 
 ---
