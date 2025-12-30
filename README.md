@@ -41,7 +41,8 @@ Users should be able to:
 ---
 
 ### Screenshot
-
+![alt text](image.png)
+![alt text](image-1.png)
 ![](./screenshot.jpg)
 
 ---
@@ -49,7 +50,7 @@ Users should be able to:
 ### Links
 
 * **Solution URL:** [https://www.frontendmentor.io/solutions/weather-app-angular-open-meteo](https://www.frontendmentor.io/solutions/weather-app-angular-open-meteo)
-* **Live Site URL:** [https://your-live-site-url.com](https://your-live-site-url.com)
+* **Live Site URL:** [https://anika57.github.io/Weather_app/](https://anika57.github.io/Weather_app/)
 
 ---
 
@@ -96,8 +97,8 @@ Users should be able to:
 
 ## Author
 
-* Frontend Mentor – [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-* GitHub – [https://github.com/yourusername](https://github.com/yourusername)
+* Frontend Mentor – [@anika57](https://www.frontendmentor.io/profile/anika57)
+* GitHub – [https://github.com/anika57](https://github.com/anika57)
 
 ---
 
