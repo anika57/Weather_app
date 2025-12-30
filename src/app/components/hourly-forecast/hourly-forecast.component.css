@@ -1,0 +1,77 @@
+.hour-container{
+  background: rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.hour-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.hour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px 8px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid hsl(243, 23%, 30%);
+  transition: background 0.2s ease;
+}
+
+.hour:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hour-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.hour-time {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+  min-width: 42px;
+}
+
+.hour-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.hour-temp {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .hour-container {
+    border-radius: 20px;
+    padding: 1rem;
+  }
+
+  .hour {
+    padding: 0.6rem 0.8rem;
+    border-radius: 14px;
+  }
+
+  .hour-time {
+    font-size: 0.85rem;
+  }
+
+  .hour-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .hour-temp {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+}

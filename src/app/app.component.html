@@ -1,0 +1,112 @@
+<header class="top-bar">
+  <div class="logo">
+    <img src="/images/logo.svg" />
+  </div>
+
+<div class="unit-wrapper">
+  <button class="unit-btn" (click)="showUnits = !showUnits">
+    ⚙ Units
+  </button>
+
+  <div class="unit-dropdown" *ngIf="showUnits">
+    <!-- Switch button -->
+    <button class="switch-btn" (click)="toggleTempUnit()">
+      Switch to {{ units.temp === 'c' ? 'Imperial' : 'Metric' }}
+    </button>
+
+    <!-- Temperature -->
+    <div class="unit-section">
+      <p class="unit-title">Temperature</p>
+
+    <div
+  class="unit-option"
+  [class.active]="units.temp === 'c'"
+  (click)="setTempUnit('c')"
+>
+  Celsius (°C)
+</div>
+
+<div
+  class="unit-option"
+  [class.active]="units.temp === 'f'"
+  (click)="setTempUnit('f')"
+>
+  Fahrenheit (°F)
+</div>
+
+    </div>
+
+    <!-- Wind -->
+    <div class="unit-section">
+      <p class="unit-title">Wind Speed</p>
+
+    <div
+  class="unit-option"
+  [class.active]="units.speed === 'kmh'"
+  (click)="setSpeedUnit('kmh')"
+>
+  km/h
+</div>
+
+<div
+  class="unit-option"
+  [class.active]="units.speed === 'mph'"
+  (click)="setSpeedUnit('mph')"
+>
+  mph
+</div>
+
+    </div>
+
+    <!-- Precipitation -->
+    <div class="unit-section">
+      <p class="unit-title">Precipitation</p>
+
+<div
+  class="unit-option"
+  [class.active]="units.precip === 'mm'"
+  (click)="setPrecipUnit('mm')"
+>
+  Millimeters (mm)
+</div>
+
+<div
+  class="unit-option"
+  [class.active]="units.precip === 'in'"
+  (click)="setPrecipUnit('in')"
+>
+  Inches (in)
+</div>
+
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+<main class="container">
+  <div class="hero">
+    <h1>How’s the sky looking today?</h1>
+    <app-search-bar (search)="onSearch($event)"></app-search-bar>
+  </div>
+
+  <div *ngIf="weatherData" class="dashboard">
+    <div class="left-column">
+      <app-current-weather
+        [weather]="weatherData"
+        [units]="units">
+      </app-current-weather>
+
+      <app-daily-forecast
+        [weather]="weatherData"
+        [units]="units">
+      </app-daily-forecast>
+    </div>
+
+    <app-hourly-forecast
+      [weather]="weatherData"
+      [units]="units">
+    </app-hourly-forecast>
+  </div>
+</main>

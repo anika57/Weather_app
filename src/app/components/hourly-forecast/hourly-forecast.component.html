@@ -1,0 +1,23 @@
+<div class="hour-container">
+  <h4>Hourly Forecast</h4>
+<div class="hour" *ngFor="let temp of weather.hourly.temperature_2m | slice:0:8; let i = index">
+  <div class="hour-left">
+    <img
+      class="hour-icon"
+      [src]="getWeatherIconByCode(weather.hourly.weathercode?.[i] ?? 0)"
+      alt="weather icon"
+    />
+
+    <p class="hour-time">{{ getHourLabel(i) }}</p>
+  </div>
+
+  <p class="hour-temp">
+  {{
+        units?.temp === 'f'
+          ? toF(weather.hourly.temperature_2m[i])
+          : weather.hourly.temperature_2m[i]
+      }}°
+</p>
+
+</div>
+</div>

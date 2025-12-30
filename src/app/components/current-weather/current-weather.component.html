@@ -1,0 +1,43 @@
+<div class="current-card">
+  <!-- TOP -->
+  <div
+    class="place"
+    [style.backgroundImage]="'url(/images/bg-today-large.svg)'"
+  >
+    <div class="place-info">
+      <h2>{{ weather?.location }}</h2>
+      <p class="date">{{ today }}</p>
+    </div>
+
+    <div class="place-temp">
+      <img [src]="weatherIcon" alt="weather icon" />
+      <span>{{ temperature }}°</span>
+    </div>
+  </div>
+
+  <!-- DETAILS -->
+  <div class="details">
+    <div class="detail-card">
+      <label>Wind</label>
+      <p>{{ windSpeed }} {{ units.speed === 'mph' ? 'mph' : 'km/h' }}</p>
+    </div>
+
+    <div class="detail-card">
+      <label>Feels Like</label>
+      <p>{{ feelsLike }}°</p>
+    </div>
+
+    <div class="detail-card">
+      <label>Humidity</label>
+      <p>{{ humidity }}%</p>
+    </div>
+
+    <div class="detail-card">
+      <label>Precipitation</label>
+      <p>
+        {{ precipitation }}
+        {{ units.precip === 'in' ? 'in' : 'mm' }}
+      </p>
+    </div>
+  </div>
+</div>

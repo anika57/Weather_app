@@ -1,0 +1,35 @@
+<div class="daily" *ngIf="weather?.daily?.temperature_2m_max?.length">
+  <h4>Daily Forecast</h4>
+
+  <div class="daily-cards">
+    <div
+      class="daily-card"
+      *ngFor="let max of weather.daily.temperature_2m_max; let i = index"
+    >
+      <p class="day-name">{{ getDayName(i) }}</p>
+      <img
+        [src]="getWeatherIcon(weather.daily.weathercode[i])"
+        alt="weather icon"
+        class="daily-icon"
+      />
+      <p class="temp-range">
+  <span class="max-temp">
+     {{
+        units?.temp === 'f'
+          ? toF(weather.daily.temperature_2m_max[i])
+          : weather.daily.temperature_2m_max[i]
+      }}°
+  </span>
+
+  <span class="min-temp">
+    {{
+        units?.temp === 'f'
+          ? toF(weather.daily.temperature_2m_min[i])
+          : weather.daily.temperature_2m_min[i]
+      }}°
+  </span>
+</p>
+
+    </div>
+  </div>
+</div>
