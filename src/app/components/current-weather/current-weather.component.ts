@@ -37,16 +37,16 @@ export class CurrentWeatherComponent {
   get weatherIcon(): string {
     const code = this.weather?.current_weather?.weathercode;
 
-    if (code === 0) return '/images/icon-sunny.webp';
-    if ([1, 2].includes(code)) return '/images/icon-partly-cloudy.webp';
-    if (code === 3) return '/images/icon-overcast.webp';
-    if ([45, 48].includes(code)) return '/images/icon-fog.webp';
-    if ([51, 53, 55].includes(code)) return '/images/icon-drizzle.webp';
-    if ([61, 63, 65].includes(code)) return '/images/icon-rain.webp';
-    if ([71, 73, 75].includes(code)) return '/images/icon-snow.webp';
-    if ([95, 96, 99].includes(code)) return '/images/icon-storm.webp';
+    if (code === 0) return 'images/icon-sunny.webp';
+    if ([1, 2].includes(code)) return 'images/icon-partly-cloudy.webp';
+    if (code === 3) return 'images/icon-overcast.webp';
+    if ([45, 48].includes(code)) return 'images/icon-fog.webp';
+    if ([51, 53, 55].includes(code)) return 'images/icon-drizzle.webp';
+    if ([61, 63, 65].includes(code)) return 'images/icon-rain.webp';
+    if ([71, 73, 75].includes(code)) return 'images/icon-snow.webp';
+    if ([95, 96, 99].includes(code)) return 'images/icon-storm.webp';
 
-    return '/images/icon-sunny.webp';
+    return 'images/icon-sunny.webp';
   }
 
   /* ---------------- HOURLY VALUES ---------------- */
